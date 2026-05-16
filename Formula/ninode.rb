@@ -1,7 +1,7 @@
 class Ninode < Formula
   desc "Terminal-based server monitoring built with React 19 and OpenTUI"
   homepage "https://github.com/michaelsieminski/ninode"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on arch: :arm64 if OS.mac?
@@ -9,18 +9,18 @@ class Ninode < Formula
   on_macos do
     on_arm do
       url "https://github.com/michaelsieminski/ninode/releases/download/v#{version}/ninode-darwin-arm64"
-      sha256 "83d93db4a01b5772a763c2294b20ade830b6cdc6d249c88757d5c79ff863bb67"
+      sha256 "f36e6fcd449e1c88bd6acffbd60e8a3825c9d8e7348f0cc749059dfdc6639b19"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/michaelsieminski/ninode/releases/download/v#{version}/ninode-linux-arm64"
-      sha256 "a6ab68f17bf216613897e40ff67dbc5d41edb2448beb702a8d89313424181ab6"
+      sha256 "f3ff1eb1b693daba561bdbce52c3f9dcc26355221d7ea962201cb8ca8d41ae30"
     end
     on_intel do
       url "https://github.com/michaelsieminski/ninode/releases/download/v#{version}/ninode-linux-x64"
-      sha256 "3d24b3b2aaeae4ffd21a5bbe4401f09685c868119ee8733aea766e6f1d98f66d"
+      sha256 "de3fd0895560af03c5023b786e6986b4e8faa32a2bc6f15ff299c4f3bc627e4c"
     end
   end
 
